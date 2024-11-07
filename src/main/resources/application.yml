@@ -1,0 +1,16 @@
+server:
+ servlet:
+    context-path: /api
+spring:
+  application:
+    name:
+      hospital-legacy
+  datasource:
+    username: ${DATASOURCE_USERNAME:mysql}
+    password: ${DATASOURCE_PASSWORD:mysql}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${DATASOURCE_URL:jdbc:mysql://localhost:3306/hospital_legacy}
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
