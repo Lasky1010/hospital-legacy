@@ -32,7 +32,6 @@
         <lombok.mapstruct.binding.version>0.2.0</lombok.mapstruct.binding.version>
         <mapstruct.version>1.5.5.Final</mapstruct.version>
         <lombok.mapstruct.binding.version>0.2.0</lombok.mapstruct.binding.version>
-        <open.api.version>2.6.0</open.api.version>
     </properties>
     <dependencies>
         <!-- SPRING -->
@@ -52,11 +51,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springdoc</groupId>
-            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-            <version> ${open.api.version}</version>
         </dependency>
 
         <!-- COMMON -->
