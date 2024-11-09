@@ -22,7 +22,11 @@ services:
     build: .
     restart: "no"
     ports:
-      - "8080:8080"
+      - "8081:8081"
+    environment:
+      DATASOURCE_PASSWORD: root
+      DATASOURCE_USERNAME: root
+      DATASOURCE_URL: jdbc:mysql://localhost:3306/hospital_legacy
     depends_on:
       - mysql
 volumes:
