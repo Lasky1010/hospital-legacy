@@ -8,8 +8,8 @@ services:
       - mysql_data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_USER: root
-      MYSQL_PASSWORD: root
+      MYSQL_USER: mysqll
+      MYSQL_PASSWORD: mysqll
       MYSQL_DATABASE: hospital_legacy
     healthcheck:
       test: mysqladmin ping -u root -p $$MYSQL_ROOT_PASSWORD
@@ -24,8 +24,8 @@ services:
     ports:
       - "8081:8081"
     environment:
-      DATASOURCE_PASSWORD: root
-      DATASOURCE_USERNAME: root
+      DATASOURCE_PASSWORD: mysqll
+      DATASOURCE_USERNAME: mysqll
       DATASOURCE_URL: jdbc:mysql://localhost:3306/hospital_legacy
     depends_on:
       - mysql

@@ -7,8 +7,8 @@ spring:
     name:
       hospital-legacy
   datasource:
-    username: ${DATASOURCE_USERNAME:root}
-    password: ${DATASOURCE_PASSWORD:root}
+    username: ${DATASOURCE_USERNAME:mysqll}
+    password: ${DATASOURCE_PASSWORD:mysqll}
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: ${DATASOURCE_URL:jdbc:mysql://localhost:3306/hospital_legacy}
   jpa:

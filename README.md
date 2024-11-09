@@ -4,11 +4,11 @@
 
 git clone https://github.com/Lasky1010/hospital-legacy.git
 
-Run ``mvn clean install``
+Run ``mvn clean install -Dmaven.test.skip=true``
 
 At the first launch you should create database, run application, and then run migration scripts
 
-Run docker-compose (or before it change env vars in [docker-compose.yaml](docker-compose.yaml))
+Run docker-compose (before it change env vars in [docker-compose.yaml](docker-compose.yaml) and specify database)
 ``` docker-compose up --build ```
 
 ## Endpoints
